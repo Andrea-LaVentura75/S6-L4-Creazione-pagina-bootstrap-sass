@@ -1,0 +1,33 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+$new-primary: #7153fa;
+
+$new-theme-colors: (
+  "primary": $new-primary,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+.width-img-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.height-nav {
+  height: 7vh;
+}
+
+.margin {
+  margin-left: 10em;
+}
+
+.hero {
+  background-color: #7153fa;
+}
+.container-bg-img {
+  background-image: url("./assets/img/hero-img.png");
+  height: 44vh;
+  background-position-x: 62%;
+}
+@import "./scss/bootstrap.scss";
